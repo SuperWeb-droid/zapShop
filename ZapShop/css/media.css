@@ -1,0 +1,219 @@
+@media screen and (max-width: 1176px){
+    .container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1151px){
+    .promo{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .header_section{
+        margin-top: 5.5rem;
+        padding-top: 4rem;
+    }
+    .header_info, .promo_banner{
+        width: 80%;
+    }
+    .title{
+        text-align: center;
+    }
+    .sub_title{
+        text-align: center;
+    }
+    .promo_btn{
+        margin-top: 3rem;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 921px){
+    .creat_website--btn{
+        margin-top: 3rem;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    .info_website{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .website_banner, .website_descr{
+        width: 90%;
+    }
+    .creat_website__title{
+        margin: 3rem 0;
+        font-size: 3.4rem;
+    }
+    .website_banner{
+        margin-bottom: 3rem;
+    }
+    .title_2lv{
+        text-align: center;
+    }
+    .website_descr_text{
+        text-align: center;
+    }
+    .advantages__wrapper:nth-child(odd){
+        flex-direction: column;
+        align-items: center;
+    }
+    .advantages__wrapper:nth-child(even){
+        flex-direction: column;
+        align-items: center;
+    }
+    .title_3lv{
+        text-align: center;
+    }
+    body.hide{
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .nav{
+        display: none;
+    }
+    .show_demo{
+        display: none;
+    }
+    .mobile_nav_btn{
+        display: flex;
+    }
+    .nav{
+        position: absolute;
+        display: block;
+        width: 80%;
+        height: 100vh;
+        top: 0;
+        bottom: 0;
+        left: -100%;
+        background-color: #1e0031;
+        flex-direction: column;
+        padding-top: 3rem;
+        transition: 0.3s ease-in;
+    }
+    .nav.show-menu{
+        left: 0;
+        box-shadow: 1rem 0 1.5rem #3a005e;
+    }
+    .nav_items{
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 2rem;
+        margin-bottom: 3rem;
+        padding-left: 1rem;
+    }
+    .nav_item{
+        border-bottom: 1px solid orange;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .title{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .wrapper_get_items{
+        flex-wrap: wrap;
+        row-gap: 3rem;
+    }
+    .get_item{
+        padding: 1rem;
+        border-radius: 1rem;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .promo_btn{
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .logo{
+        font-size: 3rem;
+    }
+    .title{
+        font-size: 2.8rem;
+    }
+    .title_2lv {
+        font-size: 2.6rem;
+    }
+    .title_3lv{
+        font-size: 2.2rem;
+    }
+
+
+    .get {
+        padding: 2rem 0;
+    }
+    .wrapper_get_items{
+        margin-top: 2rem;
+        row-gap: 1rem;
+    }
+
+    .creat_website {
+        padding: 3rem 0;
+    }
+
+    .creat_website__title{
+        margin: 1rem 0;
+    }
+
+    .our_advantages {
+        padding: 3rem 0rem ;
+    }
+    .advantages__wrapper{
+        margin-top: 3rem;
+    }
+
+    .functional{
+        padding: 3rem 0;
+    }
+
+    .contacts{
+        padding: 3rem 0;
+    }
+
+    .social_network{
+        margin-top: 1rem;
+        row-gap: 1rem;
+    }
+
+    .social_network{
+        flex-direction: column;
+        row-gap: 3rem;
+        padding: 1rem 0;
+    }
+    .contacts__title{
+        color: orange;
+    }
+    .title_4lv{
+        font-size: 1.5rem;
+    }
+    .function_item{
+        font-size: 1.2rem;
+    }
+    .creat_website--btn{
+        font-size: 1.2rem;
+    }
+    .modal_content{
+        width: 85%;
+        height: 85%;
+    }
+    .btn_modal_close{
+        top: -1.7rem;
+        right: -1.7rem;
+    }
+    .promo_btn{
+        font-size: 1rem;
+    }
+
+}

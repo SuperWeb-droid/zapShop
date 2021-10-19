@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    font-size: 10px;
+}
+.progress_line{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 0.4rem;
+    background-color: orange;
+    z-index: 99999;
+    transition: 0.2s;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+}
+p{
+    margin-top: 1.5rem;
+    color: inherit;
+    font-size: inherit;
+}
+.fa{
+    color: inherit;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container{
+    width: 117rem;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+}
+#header{
+    background-color: #1e0031;
+    padding: 2.5rem 0rem;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: orange;
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+.mobile_nav_btn{
+    width: 4rem;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    display: none;
+}
+
+.btn_line{
+    width: 100%;
+    height: 0.4rem;
+    background-color: orange;
+    position: relative;
+    transition: 0.3s ease-in;
+}
+
+.btn_line.active{
+    transform: rotate(45deg);
+}
+
+.btn_line::before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    top: -1rem;
+    left: 0;
+    background-color: orange;
+    transition: 0.3s ease-in;
+}
+
+.btn_line.active.btn_line::before{
+    transform: rotate(-90deg);
+    top: 0;
+}
+
+.btn_line::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    bottom: -1rem;
+    left: 0;
+    background-color: orange;
+    transition: 0.3s ease-in;
+}
+
+.btn_line.active.btn_line::after{
+    bottom: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 3rem;
+}
+.nav_items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_item{
+    font-size: 1.8rem;
+    color: white;
+}
+
+.nav_link{
+    position: relative;
+    transition: 0.4s ease-in;
+}
+
+.nav_link::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: orange;
+    transition: 0.2s ease-in;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.nav_link:hover::after{
+    opacity: 1;
+    bottom: -50%;
+}
+
+.nav_item:not(:last-child){
+    margin-right: 2rem;
+}
+
+.show_demo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+    background-color: #FFB800;
+    border: 1px solid #FFB800;
+    font-weight: 600;
+    transition: 0.4s ease-in-out;
+    display: inline-block;
+}
+.btn:hover{
+    background-color: transparent;
+    color: white;
+}
+
+/* header_section */
+
+.header_section{
+    margin-top: 9.5rem;
+    padding-top: 8rem;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flerablog.org%2Fwp-content%2Fuploads%2F2018%2F09%2FAuto-Repair-Service.jpg&f=1&nofb=1);
+    background-color: gray;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    position: relative;
+    min-height: 60rem;
+}
+.header_section::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #1e0031b0;
+}
+.promo{
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 99;
+}
+.header_info, .promo_banner{
+    width: 50%;
+}
+.promo_banner{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.title{
+    font-size: 4rem;
+    color: white;
+}
+.sub_title{
+    font-size: 2rem;
+    color: white;
+    margin-top: 2rem;
+}
+
+.promo_btn{
+    margin-top: 2rem;
+    display: inline-block;
+}
+
+
+/* get */
+
+.get{
+    padding: 6rem 0rem 6rem;
+}
+
+.title_2lv{
+    font-size: 3.8rem;
+    color: #1e0031;
+}
+
+.get_title{
+    text-align: center;
+}
+
+.wrapper_get_items{
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+}
+.get_item{
+    font-size: 3rem;
+    text-align: center;
+    width: 30%;
+    border-radius: 1rem;
+    padding: 1rem;
+    transition: 0.3s ease-in;
+}
+.get_item:hover{
+    box-shadow: 0 1rem 1.5rem #1e0031;
+}
+.item_icon{
+    color: #1e0031;
+    margin-bottom: 1rem;
+}
+
+.title_3lv{
+    margin-bottom: 1rem;
+    font-size: 2.4rem;
+    color: #1e0031;
+}
+
+.get_item_discr{
+    font-size: 1.7rem;
+    color: #1e0031;
+}
+
+/* creat_website */
+
+.creat_website{
+    padding: 6rem 0rem 6rem;
+    background-color: #1e003113;
+}
+.info_website{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2rem;
+}
+
+.website_banner, .website_descr{
+    width: 50%;
+}
+.website_banner{
+    transition: 0.3s ease-in;
+}
+
+.website_banner:hover{
+    box-shadow: 0 1rem 1.5rem #1e0031;
+    transform: translateY(-1rem);
+}
+.website_descr_text{
+    color: #1e0031;
+    font-size: 1.4rem;
+}
+
+.creat_website--btn{
+    border-radius: 2rem;
+    margin-top: 2rem;
+}
+
+.creat_website--btn:hover{
+    color: #1e0031;
+    
+}
+
+/* our_advantages */
+
+.our_advantages{
+    padding: 6rem 0rem 6rem;
+}
+
+.advantages__title{
+    text-align: center;
+}
+
+.advantages__wrapper{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2rem;
+    margin-top: 6rem;
+}
+
+.advantages__wrapper:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+/* functional */
+
+.functional{
+    background-color: #1e003113;
+    padding: 6rem 0rem 6rem;
+}
+.functional__title{
+    text-align: center;
+}
+/* contacts */
+
+.contacts{
+    padding: 6rem 0rem 6rem;
+    background-color: #1e0031;
+}
+.contacts__title{
+    color: orange;
+    text-align: center;
+}
+
+.social_network{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    column-gap: 2rem;
+}
+
+.soc_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: orange;
+}
+.soc_icon{
+    margin-bottom: 1rem;
+}
+
+
+/* scroll_top */
+
+.scroll_top{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: orange;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #30004e;
+    border: 2px solid #ffffff;
+    opacity: 0;
+    transform: scale(0);
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.scroll_top.active{
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+}

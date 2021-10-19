@@ -1,0 +1,46 @@
+body.hide{
+    overflow: hidden;
+    padding-right: 17px;
+}
+.modal_owerflow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #1e003185;
+    opacity: 0;
+    visibility: hidden;
+    user-select: none;
+    transition: 0.3s ease-in;
+}
+.modal_owerflow.showModal{
+    opacity: 1;
+    visibility: visible;
+    user-select: auto;
+    z-index: 99999;
+}
+
+.modal_content{
+    width: 90%;
+    height: 90%;
+    margin: 3rem auto;
+    background-color: white;
+    border-radius: 1rem;
+    position: relative;
+    transition: 0.3s ease-in;
+}
+.btn_modal_close{
+    position: absolute;
+    top: -2rem;
+    right: -2rem;
+    color: orange;
+    font-size: 2rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+iframe{
+    border-radius: 1rem;
+}
